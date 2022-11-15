@@ -1,0 +1,29 @@
+<!-- File : src/app/framework/framework.component.html -->
+<nav class="navbar navbar-expand-md navbar-light bg-light">
+    <div class="container">
+        <a href="/" class="navbar-brand">SIMARTA</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div id="navbarMain" class="navbar-collapse collapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a href="/about/" class="nav-link">About</a>
+                    <a href="/surat/" class="nav-link">Surat</a>
+                    <a href="/berkas/" class="nav-link">Berkas</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="container">
+    <router-outlet></router-outlet>
+    <footer>
+        <div class="row">
+            <div class="col-12">
+                <small>&copy; 2022 - PAW II SI51</small>
+            </div>
+        </div>
+    </footer>
+</div>
