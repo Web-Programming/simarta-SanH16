@@ -1,4 +1,85 @@
-<p>data berkas!</p>
 <!-- silahkan desain halaman ini yang menampilkan
 1. table(no, nama, no berkas, jenis, pemilik, aksi)
 2. button create / add /tambah berkas -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabel berkas</title>
+</head>
+<body>
+    <h1 class="center">Data Berkas</h1>
+    <table class="table">
+        <thead>
+            <th>No.</th>
+            <th>Nama</th>
+            <th>No. Berkas</th>
+            <th>Jenis</th>
+            <th>Pemilik</th>
+            <th>Aksi</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td data-label="No.">1.</td>
+                <td data-label="Nama">Adhitya Hasan</td>
+                <td data-label="No. Berkas">B101</td>
+                <td data-label="Jenis">Berkas PDF</td>
+                <td data-label="Pemilik">Nur Rachmat</td><div class="boxx">
+                    <button type="button" class="btn btn-primary">Edit</button>
+                    <button type="button" class="btn btn-danger">Delete</button>
+                </div>
+            </tr>
+
+            <tr>
+                <td data-label="No.">2.</td>
+                <td data-label="Nama">Sunny</td>
+                <td data-label="No. Berkas">B102</td>
+                <td data-label="Jenis">Berkas Library</td>
+                <td data-label="Pemilik">Kiyowcutie</td><div class="boxx">
+                    <button type="button" class="btn btn-primary">Edit</button>
+                    <button type="button" class="btn btn-danger">Delete</button>
+                </div>
+            </tr>
+
+            <tr>
+                <td data-label="No.">3.</td>
+                <td data-label="Nama">Sage</td>
+                <td data-label="No. Berkas">B103</td>
+                <td data-label="Jenis">Berkas Multimedia</td>
+                <td data-label="Pemilik">Phoenix</td><div class="boxx">
+                    <button type="button" class="btn btn-primary">Edit</button>
+                    <button type="button" class="btn btn-danger">Delete</button>
+                </div>
+            </tr>
+
+            <tr>
+                <td data-label="No.">4.</td>
+                <td data-label="Nama">Omen</td>
+                <td data-label="No. Berkas">B104</td>
+                <td data-label="Jenis">Berkas Archive</td>
+                <td data-label="Pemilik">Jett</td><div class="boxx">
+                    <button type="button" class="btn btn-primary">Edit</button>
+                    <button type="button" class="btn btn-danger">Delete</button>
+                </div>
+            </tr>
+
+            <tr>
+                <td data-label="No.">5.</td>
+                <td data-label="Nama">Reyna</td>
+                <td data-label="No. Berkas">B105</td>
+                <td data-label="Jenis">Berkas Document</td>
+                <td data-label="Pemilik">Neon</td>
+                <div class="boxx">
+                    <button type="button" class="btn btn-primary">Edit</button>
+                    <button type="button" class="btn btn-danger">Delete</button>
+                </div>
+            </tr>
+        </tbody>
+    </table>
+    <div class="box">
+        <button type="button" class="btn btn-success">Tambah Berkas</button>
+    </div>	
+</body>
+</html>

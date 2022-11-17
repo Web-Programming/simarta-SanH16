@@ -1,4 +1,85 @@
-<p>data surat!</p>
 <!-- silahkan desain halaman ini yang menampilkan
 1. table(no, nama, jenis, tgl_surat, aksi)
 2. button create / add /tambah surat -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabel surat</title>
+</head>
+<body>
+    <h1 class="center">Data Surat</h1>
+    <table class="table">
+        <thead>
+            <th>No.</th>
+            <th>Nama</th>
+            <th>Jenis</th>
+            <th>Tanggal surat</th>
+            <th>Aksi</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td data-label="No.">1.</td>
+                <td data-label="Nama">Adhitya Hasan</td>
+                <td data-label="Jenis">Surat Resmi</td>
+                <td data-label="Tanggal Surat">18 November 2022</td>
+                <div class="boxx">
+                    <button type="button" class="btn btn-primary">Edit</button>
+                    <button type="button" class="btn btn-danger">Delete</button>
+                </div>
+            </tr>
+
+            <tr>
+                <td data-label="No.">2.</td>
+                <td data-label="Nama">Sunny</td>
+                <td data-label="Jenis">Surat Niaga</td>
+                <td data-label="Tanggal Surat">17 November 2022</td>
+                <div class="boxx">
+                    <button type="button" class="btn btn-primary">Edit</button>
+                    <button type="button" class="btn btn-danger">Delete</button>
+                </div>
+            </tr>
+
+            <tr>
+                <td data-label="No.">3.</td>
+                <td data-label="Nama">Sage</td>
+                <td data-label="Jenis">Surat Delegasi</td>
+                <td data-label="Tanggal Surat">16 November 2022</td>
+                <div class="boxx">
+                    <button type="button" class="btn btn-primary">Edit</button>
+                    <button type="button" class="btn btn-danger">Delete</button>
+                </div>
+            </tr>
+
+            <tr>
+                <td data-label="No.">4.</td>
+                <td data-label="Nama">Omen</td>
+                <td data-label="Jenis">Surat Dinas</td>
+                <td data-label="Tanggal Surat">16 November 2022</td>
+                <div class="boxx">
+                    <button type="button" class="btn btn-primary">Edit</button>
+                    <button type="button" class="btn btn-danger">Delete</button>
+                </div>
+            </tr>
+
+            <tr>
+                <td data-label="No.">5.</td>
+                <td data-label="Nama">Reyna</td>
+                <td data-label="Jenis">Surat Pribadi</td>
+                <td data-label="Tanggal Surat">15 November 2022</td>
+                <div class="boxx">
+                    <button type="button" class="btn btn-primary">Edit</button>
+                    <button type="button" class="btn btn-danger">Delete</button>
+                </div>
+            </tr>
+
+            
+        </tbody>
+    </table>
+    <div class="box">
+        <button type="button" class="btn btn-success">Tambah Surat</button>
+    </div>	
+</body>
+</html>
