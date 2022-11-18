@@ -14,36 +14,42 @@
     <table class="table">
         <thead>
             <th>No.</th>
-            <th>Nama</th>
-            <th>Jenis</th>
+            <th>Nomor Surat</th>
+            <th>Jenis Surat</th>
             <th>Tanggal surat</th>
+            <th>Pejabat</th>
+            <th>Nama Pejabat</th>
+            <th>Nama Ditugaskan</th>
             <th>Aksi</th>
         </thead>
         <tbody>
-            <tr>
-                <td data-label="No.">1.</td>
-                <td data-label="Nama">Adhitya Hasan</td>
-                <td data-label="Jenis">Surat Resmi</td>
-                <td data-label="Tanggal Surat">18 November 2022</td>
+            <tr *ngFor="let surat of listSurat; let no = index;">
+                <td data-label="No.">{{no+1}}</td>
+                <td data-label="Nama">{{surat.nomor_surat}}</td>
+                <td data-label="Jenis">{{surat.jenis_surat}}</td>
+                <td data-label="Tanggal Surat">{{surat.tgl_surat}}</td>
+                <td data-label="Pejabat Penandatangan">{{surat.pejabat_penandatangan}}</td>
+                <td data-label="Nama Penandatanganan">{{surat.nama_penandatangan}}</td>
+                <td data-label="Nama Ditugaskan">{{surat.nama_ditugaskan}}</td>
                 <div class="boxx">
                     <button type="button" class="btn btn-primary">Edit</button>
                     <button type="button" class="btn btn-danger">Delete</button>
                 </div>
             </tr>
 
-            <tr>
-                <td data-label="No.">2.</td>
-                <td data-label="Nama">Sunny</td>
-                <td data-label="Jenis">Surat Niaga</td>
-                <td data-label="Tanggal Surat">17 November 2022</td>
-                <div class="boxx">
-                    <button type="button" class="btn btn-primary">Edit</button>
-                    <button type="button" class="btn btn-danger">Delete</button>
-                </div>
-            </tr>
-
-            <tr>
+            <!-- <tr>
                 <td data-label="No.">3.</td>
+                <td data-label="Nama">Sunny</td>
+                <td data-label="Jenis">Surat Keputusan</td>
+                <td data-label="Tanggal Surat">02 November 2022</td>
+                <div class="boxx">
+                    <button type="button" class="btn btn-primary">Edit</button>
+                    <button type="button" class="btn btn-danger">Delete</button>
+                </div>
+            </tr>
+
+            <tr>
+                <td data-label="No.">4.</td>
                 <td data-label="Nama">Sage</td>
                 <td data-label="Jenis">Surat Delegasi</td>
                 <td data-label="Tanggal Surat">16 November 2022</td>
@@ -54,7 +60,7 @@
             </tr>
 
             <tr>
-                <td data-label="No.">4.</td>
+                <td data-label="No.">5.</td>
                 <td data-label="Nama">Omen</td>
                 <td data-label="Jenis">Surat Dinas</td>
                 <td data-label="Tanggal Surat">16 November 2022</td>
@@ -65,7 +71,7 @@
             </tr>
 
             <tr>
-                <td data-label="No.">5.</td>
+                <td data-label="No.">6.</td>
                 <td data-label="Nama">Reyna</td>
                 <td data-label="Jenis">Surat Pribadi</td>
                 <td data-label="Tanggal Surat">15 November 2022</td>
@@ -73,9 +79,7 @@
                     <button type="button" class="btn btn-primary">Edit</button>
                     <button type="button" class="btn btn-danger">Delete</button>
                 </div>
-            </tr>
-
-            
+            </tr> -->
         </tbody>
     </table>
     <div class="box">

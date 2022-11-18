@@ -14,25 +14,26 @@
     <table class="table">
         <thead>
             <th>No.</th>
-            <th>Nama</th>
+            <th>Nama Berkas</th>
             <th>No. Berkas</th>
-            <th>Jenis</th>
+            <th>Jenis File</th>
             <th>Pemilik</th>
             <th>Aksi</th>
         </thead>
         <tbody>
-            <tr>
-                <td data-label="No.">1.</td>
-                <td data-label="Nama">Adhitya Hasan</td>
-                <td data-label="No. Berkas">B101</td>
-                <td data-label="Jenis">Berkas PDF</td>
-                <td data-label="Pemilik">Nur Rachmat</td><div class="boxx">
+            <tr *ngFor="let berkas of listBerkas; let no = index;">
+                <td data-label="No.">{{no+1}}</td>
+                <td data-label="Nama Berkas">{{berkas.nama_berkas}}</td>
+                <td data-label="No. Berkas">{{berkas.no_berkas}}</td>
+                <td data-label="Jenis File">{{berkas.jenis_file}}</td>
+                <td data-label="Pemilik">{{berkas.pemilik}}</td>
+                <div class="boxx">
                     <button type="button" class="btn btn-primary">Edit</button>
                     <button type="button" class="btn btn-danger">Delete</button>
                 </div>
             </tr>
 
-            <tr>
+            <!-- <tr>
                 <td data-label="No.">2.</td>
                 <td data-label="Nama">Sunny</td>
                 <td data-label="No. Berkas">B102</td>
@@ -75,7 +76,7 @@
                     <button type="button" class="btn btn-primary">Edit</button>
                     <button type="button" class="btn btn-danger">Delete</button>
                 </div>
-            </tr>
+            </tr> -->
         </tbody>
     </table>
     <div class="box">
