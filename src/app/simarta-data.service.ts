@@ -17,6 +17,7 @@ export class SimartaDataService {
   }
 
   //tampilkan data berkas yang diambil dari api/berkas
+  
 
   private handleError(error:any): Promise<any> {
     console.error('Something has gone wrong', error);
