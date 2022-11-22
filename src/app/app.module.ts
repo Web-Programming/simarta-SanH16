@@ -1,12 +1,13 @@
-import { NgModule } from '@angular/core';
+import { Component, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { RouterModule } from '@angular/router';
+import { RouterModule } from '@angular/router'; //tambahkan RouterModule
 
 import { AppComponent } from './app.component';
 import { AboutComponent } from './about/about.component';
 import { SuratComponent } from './surat/surat.component';
 import { BerkasComponent } from './berkas/berkas.component';
 import { FrameworkComponent } from './framework/framework.component';
+import { HttpClientModule } from '@angular/common/http' //mengambil API, tambahkan juga HttpClientModule
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { FrameworkComponent } from './framework/framework.component';
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     RouterModule.forRoot([
       {
         path: "",
