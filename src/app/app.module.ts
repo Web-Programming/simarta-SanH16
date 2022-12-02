@@ -7,7 +7,9 @@ import { AboutComponent } from './about/about.component';
 import { SuratComponent } from './surat/surat.component';
 import { BerkasComponent } from './berkas/berkas.component';
 import { FrameworkComponent } from './framework/framework.component';
-import { HttpClientModule } from '@angular/common/http' //mengambil API, tambahkan juga HttpClientModule
+import { HttpClientModule } from '@angular/common/http';
+import { DetailsPageComponent } from './details-page/details-page.component';
+import { SuratDetailsComponent } from './surat-details/surat-details.component' //mengambil API, tambahkan juga HttpClientModule
 
 @NgModule({
   declarations: [
@@ -15,7 +17,9 @@ import { HttpClientModule } from '@angular/common/http' //mengambil API, tambahk
     AboutComponent,
     SuratComponent,
     BerkasComponent,
-    FrameworkComponent
+    FrameworkComponent,
+    DetailsPageComponent,
+    SuratDetailsComponent
   ],
   imports: [
     BrowserModule,
@@ -36,6 +40,11 @@ import { HttpClientModule } from '@angular/common/http' //mengambil API, tambahk
       {
         path: "berkas",
         component: BerkasComponent
+      },
+      { //route ke halaman surat-details
+        //mengirimkan suratId sebagai parameternya
+        path: "surat/:suratId",
+        component: DetailsPageComponent
       }
     ])
   ],

@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Surat } from './surat/surat.component';
+import { Berkas } from './berkas/berkas.component';
 
 @Injectable({
   providedIn: 'root'
@@ -16,7 +17,17 @@ export class SimartaDataService {
     return this.http.get(url).toPromise().then(response => response as Surat[]).catch(this.handleError);
   }
 
+  //method... 
+  public getSuratById(suratId:string): Promise<Surat>{
+    const url: string = `${this.apiBaseUrl}/surat/${suratId}`; //.../surat/
+    return this.http.get(url).toPromise().then(response => response as Surat[]).catch(this.handleError);
+  }
+
   //tampilkan data berkas yang diambil dari api/berkas
+  public getListBerkas(): Promise<Berkas[]> {
+    const url: string = `${this.apiBaseUrl}/berkas`; //apiurl/berkas
+    return this.http.get(url).toPromise().then(response => response as Berkas[]).catch(this.handleError);
+  }
   
 
   private handleError(error:any): Promise<any> {
