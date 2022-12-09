@@ -28,6 +28,12 @@ export class SimartaDataService {
     const url: string = `${this.apiBaseUrl}/berkas`; //apiurl/berkas
     return this.http.get(url).toPromise().then(response => response as Berkas[]).catch(this.handleError);
   }
+
+  //method... 
+  public getBerkasById(berkasId:string): Promise<Surat>{
+    const url: string = `${this.apiBaseUrl}/berkas/${berkasId}`; //.../berkas/
+    return this.http.get(url).toPromise().then(response => response as Berkas[]).catch(this.handleError);
+  }
   
 
   private handleError(error:any): Promise<any> {

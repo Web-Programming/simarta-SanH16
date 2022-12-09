@@ -62,6 +62,7 @@ export class SuratComponent implements OnInit {
     this.simartaDataService.getListSurat().then(response => this.listSurat = response)
   }
 
+
   ngOnInit(): void {
     this.getListSurat();
   }

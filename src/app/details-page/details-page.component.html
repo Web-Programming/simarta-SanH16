@@ -6,9 +6,10 @@
 
 <div class="row">
     <div class="col-md-8">
-        <app-surat-details></app-surat-details>
+        <app-surat-details *ngIf="pageContent.page == 'surat'" [surat]="dataSurat"></app-surat-details>
     </div>
     <div class="col-md-2">
-        Ini bagian sidebar
+        Ini bagian sidebar, silahkan desain sesuai kebutuhan !
     </div>
 </div>
+
