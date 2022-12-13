@@ -18,7 +18,7 @@ export class SimartaDataService {
   }
 
   //method... 
-  public getSuratById(suratId:string): Promise<Surat>{
+  public getSuratById(suratId:any): Promise<Surat>{
     const url: string = `${this.apiBaseUrl}/surat/${suratId}`; //.../surat/
     return this.http.get(url).toPromise().then(response => response as Surat[]).catch(this.handleError);
   }
