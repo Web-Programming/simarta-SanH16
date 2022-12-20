@@ -1,12 +1,12 @@
 <div class="row banner">
     <div class="col-12">
-        <h1>Detail Surat: judul surat</h1>
+        <h1>{{pageContent.header.title}}</h1>
     </div>
 </div>
 
 <div class="row">
     <div class="col-md-8">
-        <app-surat-details *ngIf="pageContent.page == 'surat'" [surat]="dataSurat"></app-surat-details>
+        <app-surat-details *ngIf="pageContent.page == 'surat'"></app-surat-details>
     </div>
     <div class="col-md-2">
         Ini bagian sidebar, silahkan desain sesuai kebutuhan !
